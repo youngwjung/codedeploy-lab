@@ -195,6 +195,8 @@ Resources:
     Properties:
       HealthCheckProtocol: HTTP
       HealthCheckPath: "/catalog/"
+      HealthCheckIntervalSeconds: 5
+      HealthyThresholdCount: 2
       Port: 80
       Protocol: HTTP
       VpcId: !Ref VPC
