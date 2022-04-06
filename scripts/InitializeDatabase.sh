@@ -2,4 +2,4 @@
 
 set -e
 
-psql -h localhost -U postres < ./init-db.sql
+psql -h localhost -U postres < /opt/django-locallibrary-tutorial/scripts/init-db.sql
