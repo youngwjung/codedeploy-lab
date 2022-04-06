@@ -4,6 +4,9 @@ files:
   - source: /
     destination: /opt/django-locallibrary-tutorial
 hooks:
+  BeforeInstall:
+    - location: scripts/InitializeDatabase.sh
+      timeout: 300
   AfterInstall:
     - location: scripts/InstallLibrary.sh
       timeout: 60
